@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='./js/bignumber.min.js'></script>
+  <link rel="stylesheet" href="style.css">
+  <title>WebAssembly</title>
+</head>
+<body>
+  <h1>Fibonacci calculator</h1>
+  <input id="input" type="number" value="20" />
+  <div class="contentsWrap">
+    <h1 class="title">Recursion</h1>
+    <div class="innerWrap">
+      <button id="btn_wasm">WebAssembly</button>
+      <h3 id="result_wasm"></h3>
+      <h3 id="time_wasm"></h3>
+    </div>
+    <div class="innerWrap">
+      <button id="btn_js">JavaScript</button>
+      <h3 id="result_js"></h3>
+      <h3 id="time_js"></h3>
+    </div>
+    <h1 class="title">More Efficient calculation</h1>
+    <div class="innerWrap">
+      <button id="btn_wasm2" class="efficient">WebAssembly</button>
+      <h3 id="result_wasm2"></h3>
+      <h3 id="time_wasm2"></h3>
+    </div>
+    <div class="innerWrap">
+      <button id="btn_js2" class="efficient">JavaScript</button>
+      <h3 id="result_js2"></h3>
+      <h3 id="time_js2"></h3>
+    </div>
+  </div>
+
+  <script src="./js/index.js"></script>
+  <script src="./js/fib_wasm1.js"></script>
+  <script src="./js/fib_wasm2.js"></script>
+  <script src="./js/fib_js1.js"></script>
+  <script src="./js/fib_js2.js"></script>
+</body>
+</html>
